@@ -1,0 +1,134 @@
+:root {
+	--main-color: #32334c;
+	--second-color: #ef6d58;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: var(--main-color) no-repeat;
+	color: #fff;
+	font-family: 'Epilogue', sans-serif;
+}
+/*##################### navbar start ###################### */
+/*logo start */
+.logo {
+	position: relative;
+}
+#outer-pentagon {
+	color: var(--second-color);
+	font-size: 3rem;
+}
+#inner-pentagon {
+	color: var(--main-color);
+	font-size: 2.5rem;
+	position: absolute;
+	left: 0.25rem;
+	top: 0.25rem;
+}
+#inner-inner-pentagon {
+	color: var(--second-color);
+	font-size: 1.3rem;
+	position: absolute;
+	left: 0.8rem;
+	top: 1rem;
+}
+/* logo end */
+/* brand start */
+.nav-bar > .container {
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+.nav-bar > .container > .brand {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+}
+.nav-bar > .container > .brand > .logo {
+	margin-right: 1.5rem;
+}
+.nav-bar > .container > .brand > .brand-text {
+	font-size: 1.5rem;
+}
+/* brand  end */
+/* nav list center start*/
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+nav .container {
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	text-transform: capitalize;
+}
+nav .nav-list > ul {
+	width: 50vw;
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+/* nav list center end*/
+/* contact-box start */
+
+.nav-bar .contact-box {
+}
+.nav-bar .contact-box #contact {
+	border: 1px solid #707070;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+}
+/* contact-box end */
+/*################## navbar end######### */
+/* .Home-page > .container .main-content > .text-name + .main-text + p + button#jumb-to-Work {
+
+} */
+.Home-page {
+	margin-top: 10rem;
+}
+.Home-page > .container {
+	width: 85vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.Home-page > .container img {
+	display: block;
+}
+.Home-page > .container .main-content {
+	width: 50vw;
+}
+.Home-page > .container .main-content > .text-name {
+	color: var(--second-color);
+	text-transform: uppercase;
+	word-spacing: 0.3rem;
+	letter-spacing: 0.2rem;
+}
+.Home-page > .container .main-content > .main-text {
+	font-size: 4.5rem;
+	margin-top: 4rem;
+}
+.Home-page > .container .main-content > p {
+	width: 35vw;
+	color: #8d8d98;
+	margin-top: 1rem;
+}
+.Home-page > .container .main-content > button#jumb-to-Work {
+	border: 1px solid #707070;
+	font-weight: bold;
+	padding: 1rem 2rem;
+	margin-top: 2rem;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+	background-color: var(--second-color);
+	color: #fff;
+}
