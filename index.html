@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>  
-    <header>
+    <header id="sticky">
         <nav class="nav-bar">
             <div class="container">
                 <div class="brand">
@@ -53,5 +53,40 @@
             </section>
         </div>
     </section>
+    <section class="services-page">
+        <div class="container">
+            <div class="title">
+                services
+            </div>
+            <div class="sup-title">
+                How I Can Help<br/>
+                You With
+            </div>
+            <table class="services">
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                    
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("sticky");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>

@@ -11,6 +11,7 @@ body {
 	background: var(--main-color) no-repeat;
 	color: #fff;
 	font-family: 'Epilogue', sans-serif;
+	overflow-x: hidden;
 }
 /*##################### navbar start ###################### */
 /*logo start */
@@ -36,7 +37,38 @@ body {
 	top: 1rem;
 }
 /* logo end */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky .nav-bar {
+	background: #ef6d58;
+	padding: 3px 100px;
+	animation: ease-out 2s;
+}
+.sticky .contact-box #contact {
+	border: 1px solid #fff;
+	background: #32334c;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+}
+.sticky #outer-pentagon {
+	color: var(--main-color);
+}
+.sticky #inner-pentagon {
+	color: var(--second-color);
+}
+.sticky #inner-inner-pentagon {
+	color: var(--main-color);
+}
 /* brand start */
+.nav-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
 .nav-bar > .container {
 	width: 80vw;
 	display: flex;
@@ -92,6 +124,7 @@ nav .nav-list > ul {
 } */
 .Home-page {
 	margin-top: 10rem;
+	height: 120vh;
 }
 .Home-page > .container {
 	width: 85vw;
@@ -132,3 +165,10 @@ nav .nav-list > ul {
 	background-color: var(--second-color);
 	color: #fff;
 }
+/*********************** services page(2nd page) start**************************** */
+section.services-page {
+	width: 100vw;
+	height: 93vh;
+	background: #fdf0e9;
+}
+/*********************** services page(2nd page) end**************************** */
